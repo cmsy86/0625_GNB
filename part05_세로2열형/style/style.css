@@ -1,0 +1,71 @@
+@charset "UTF-8";
+@import url(style_Reset.css);
+
+div#wrap {
+    width: 400px;
+    height: 600px;
+    padding: 20px;
+    border: 1px solid #000;
+    margin: 20px auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+nav#gnb {
+    padding: 20px;
+    /*border: 1px solid #aaa;*/
+    margin: 20px auto;
+}
+
+#gnb>ul#mainMenu {
+    /*border: 1px solid #000;*/
+}
+
+#gnb li.mainLi {
+    text-align: center;
+    /*border: 1px solid #f80;*/
+    position: relative;
+}
+
+#gnb a {
+    width: 160px;
+    text-align: center;
+    font-size: 17px;
+    font-weight: bold;
+    border: 1px solid #eee;
+    margin: 0 auto;
+    display: inline-block;
+}
+
+#gnb li.mainLi > a {
+    height: 50px;
+    line-height: 50px;
+}
+
+#gnb li.mainLi:hover > a {
+    color: #fff;
+    background-color: lightskyblue;
+}
+
+#gnb li.subLi>a:hover {
+    color: #222;
+    background-color: #fff;
+}
+
+#gnb ul.subMenu {
+    position: absolute;
+    left: 239px;
+    top: 0px;
+    /*자식요소 u.subMenu가 position: absolute; 이므로 위치를 left를 사용했을 때 기준위치를 body 요소 설정하지 못하도록 만듦*/
+    display: none;
+}
+
+#gnb li.subLi > a {
+    height: 40px;
+    line-height: 40px;
+    
+    color: #fff;
+    background-color: lightskyblue;
+}
